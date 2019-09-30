@@ -41,7 +41,7 @@ class Expedition:
     def get_spaceship(self):
         return self.__spaceship
 
-    def get_pass_list(self):#
+    def get_pass_list(self):
         return self.__passenger_list
 
     def print_list_passengers(self):
