@@ -7,7 +7,27 @@
 
 class Expedition:
     def __init__(self,destination,spaceship,passenger_list = [],origin = 'Gazorpazorp Station'):
-        self.destination = destination
-        self.spaceship = spaceship
-        self.passenger_list =[]
-        self.origin = origin
+        self.__destination = destination
+        self.__spaceship = spaceship
+        self.__passenger_list =[]
+        self.__origin = origin
+
+    def assign_spaceship(self, new_ship):
+        self.__spaceship = new_ship
+
+    def expo_details(self):
+        # we want to send a dictionary with:
+            #origin
+            #destination
+            #ship
+            #passenger list
+        expo_details = {
+            'origin': self.__origin,
+            'destination': self.__destination,
+            'ship': self.__spaceship,
+            'pass_list': self.__passenger_list
+        }
+        return expo_details
+
+    def add_pass_to_expo(self, passenger):
+        self.__passenger_list.append(passenger)
