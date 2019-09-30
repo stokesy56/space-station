@@ -1,8 +1,13 @@
 # import all classes
-
+from passenger_class import *
 # create object here
     # generate 6 passengers
-
+passenger1 = Passenger('Vish', 'Which', '007')
+passenger2 = Passenger('Mous', 'Marching', '684')
+passenger3 = Passenger('David', 'Which', '666')
+passenger4 = Passenger('Lennok', 'Marching', '777')
+passenger5 = Passenger('Dan', 'Pluton', '584')
+passenger6 = Passenger('Chewie', 'Wookie', '657')
     # generate 3 spaceships
 
     # generate 3 expeditions
