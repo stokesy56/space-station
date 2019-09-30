@@ -31,3 +31,19 @@ class Expedition:
 
     def add_pass_to_expo(self, passenger):
         self.__passenger_list.append(passenger)
+
+    def get_destination(self):
+        return self.__destination
+
+    def get_origin(self):
+        return self.__origin
+
+    def get_spaceship(self):
+        return self.__spaceship
+
+    def get_pass_list(self):#
+        return self.__passenger_list
+
+    def print_list_passengers(self):
+        for passenger in self.get_pass_list():
+            print('Name: ' + passenger.name + ',', 'Species: ' + passenger.species + ',', 'IDR: ' + passenger.intergalactic_dna_reg)
